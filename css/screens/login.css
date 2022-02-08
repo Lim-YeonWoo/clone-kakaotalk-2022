@@ -1,0 +1,69 @@
+.welcome-header {
+  margin: 90px 0px; /*상하 & 좌우*/
+  text-align: center; /*안의 내용들이 text이므로 display: flex; 대신 text-align:center;로*/
+  display: flex; /* welcome-header__text가 너비를 가졌더니 display:flex 필요해짐.*/
+  flex-direction: column; /*display:flex; 까지만 쓰면 좌우로 놓여서 flex-direction 변경*/
+  align-items: center; /*cross axis(교차축) 이용. 수평 방향을 center로. */
+}
+
+.welcome-header__title {
+  margin-bottom: 30px;
+  font-size: 25px;
+  font-weight: 600; /*글자 두께 뚱뚱하게*/
+}
+
+.welcome-header__text {
+  width: 60%; /*좌우로 쓸 수 있는 글씨길이에 제한을 두는 것.*/
+  opacity: 0.7; /*회색글씨를 만들기 위해서 불투명도를 0.7로 */
+}
+
+/*여기부터는 이제 login-form 스타일*/
+#login-form {
+  display: flex;
+  flex-direction: column;
+  /*위의 두줄로, 가로로 배치되어있던 <input>들 & <a>가 세로로 배치됨*/
+  margin: 0px 30px;
+}
+
+#login-form input {
+  /*id가 login-form인거 안의 모든 input자식들에게 적용됨*/
+  padding: 15px 0px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  border: none;
+  /* border-bottom: 1px solid rgba(0, 0, 0, 0.3); :not 쓸거라 삭제 */
+  /* transition: border-color 0.3s ease-in-out; :not 쓸거라 삭제 */
+}
+
+#login-form input:not([type="submit"]) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  transition: border-color 0.3s ease-in-out; /*transition!! input 클릭시 bottom밖에 없는 border가 서서히 노란색이 됨*/
+}
+
+#login-form input::placeholder {
+  /*login-form안의 모든 input의 placeholder에 적용됨*/
+  color: rgba(0, 0, 0, 0.4); /*place holder의 색상 변경*/
+}
+
+/* 이 페이지 뿐만 아니라 모든 <input>에 대해, 
+  클릭했을 때 스타일을 지정해주기 위해,
+  reset.css 마지막에 코드 추가해주자. */
+
+/*이 페이지의 <input>에만 추가로 지정해주자*/
+#login-form input:focus {
+  border-color: var(--yellow); /*input클릭시 border-bottom색상이 서서히 바뀜 */
+}
+
+/*버튼 두개 스타일링*/
+#login-form input[type="submit"] {
+  background-color: var(--yellow);
+  cursor: pointer; /*버튼위에 마우스 올라가면 커서가 포인터로 변함*/
+  border-radius: 5px;
+}
+
+#login-form a {
+  text-align: center;
+  text-decoration: none;
+  color: inherit; /*색상을 부모로부터 상속받는 것*/
+  font-size: 15px;
+}

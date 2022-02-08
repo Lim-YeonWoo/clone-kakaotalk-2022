@@ -1,0 +1,33 @@
+/*가로 3개의 column 적절히 배치*/
+.status-bar {
+  display: flex; /*가로로 놓기*/
+  justify-content: center; /*사이에 공간 주기*/
+  padding: 5px 3px;
+}
+
+/* CSS hack: 시간이 정가운데가 아니므로 CSS hack을 이용해 정가운데로 만들기*/
+.status-bar__column {
+  width: 33%;
+}
+
+/*맨 왼쪽에 No Service 와 와이파이 이모티콘 사이에 간격주기*/
+.status-bar__column:first-child span {
+  margin-right: 5px;
+}
+
+/* CSS hack: 시간이 정가운데가 아니므로 CSS hack을 이용해 정가운데로 만들기*/
+.status-bar__column:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+
+.status-bar__column:last-child {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; /*last-child가 여러개 요소로 이루어짐. 그것들이 겹치지 않도록해줌*/
+}
+
+.status-bar__column .fa-battery-full {
+  /*배터리아이콘 양옆에 margin 주기*/
+  margin: 0px 5px;
+}
