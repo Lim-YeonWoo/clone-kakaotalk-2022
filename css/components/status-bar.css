@@ -3,6 +3,10 @@
   display: flex; /*가로로 놓기*/
   justify-content: center; /*사이에 공간 주기*/
   padding: 5px 3px;
+  /*페이지가 길어져도 항상 상단에 위치를 고정하기 위해 코드 추가*/
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 /* CSS hack: 시간이 정가운데가 아니므로 CSS hack을 이용해 정가운데로 만들기*/
