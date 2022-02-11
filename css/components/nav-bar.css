@@ -5,6 +5,7 @@
   position: fixed;
   bottom: 0;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .nav__list {
@@ -15,4 +16,35 @@
 .nav__link {
   color: #2e363e;
   /*reset.css에서 지정해준 a{}의 기본 형식으로는 색상이 검정이 됨. 따라서 색상을 짙은 회색으로 바꿔줌*/
+  position: relative;
+}
+
+.nav_notification {
+  background-color: tomato;
+  /*span은 inline이라서 width랑 height 적용안되므로, 일단 block으로 바꾸자*/
+  /*display: block;*/ /*근데 밑에서 display: flex;하면 inline -> block 되므로 삭제*/
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  /*1을 가운데에 위치하게 하기 위함*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  /*메세지 아이콘 위에 숫자1이 오게 하고 싶으면,*/
+  position: absolute;
+  left: 15px;
+  bottom: 10px;
+}
+
+.nav_dot {
+  background-color: tomato;
+  border-radius: 50%;
+  display: block;
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  left: 20px;
+  bottom: 18px;
 }
