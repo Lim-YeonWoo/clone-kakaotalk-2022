@@ -1,0 +1,12 @@
+#friends-display-link {
+  text-align: center;
+  display: block;
+  background-color: #f7f7f7;
+  padding: 15px 0px;
+  font-size: 17px;
+}
+
+/*아이콘은 그냥 text라고 생각하고 색상, 크기 등등 변경하면 됨*/
+#friends-display-link i {
+  color: rgba(0, 0, 0, 0.3);
+}
