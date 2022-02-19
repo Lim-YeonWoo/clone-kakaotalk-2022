@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Friends-kakaotalk clone</title>
   </head>
+
   <body>
     <div class="status-bar">
       <div class="status-bar__column">
@@ -33,11 +34,56 @@
     </header>
 
     <a id="friends-display-link">
+      <!--전체 프로젝트 통틀어서 여기만 쓰이므로 class 대신 id 줌-->
       <i class="fas fa-info-circle"></i>
       Friends' Names Display
       <i class="fas fa-chevron-right fa-xs"></i>
     </a>
-    <!--전체 프로젝트 통틀어서 여기만 쓰이므로 class 대신 id 줌-->
+
+    <main class="friends-screen">
+      <div class="user-component">
+        <div class="user-component__column">
+          <!--단축키: [div.클래스이름*2] 쓰고 enter-->
+          <img
+            src="https://avatars.githubusercontent.com/u/90602936?s=400&u=102cba93fd859f66410bd45204d804675e821fd8&v=4"
+            class="user-component__img user-component__img--xl"
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__name">YeonWoo</h4>
+            <!--<h6 class="user-component__subtitle">this is subtitle</h6>-->
+          </div>
+        </div>
+
+        <div class="user-component__column"></div>
+      </div>
+
+      <div class="friends-screen__channel">
+        <div class="friends-screen__channel-header">
+          <span>Channel</span>
+          <i class="fas fa-chevron-up fa-xs"></i>
+        </div>
+        <!--이 밑으론, user-component꺼 복붙 후 약간 수정하기-->
+        <div class="user-component">
+          <div class="user-component__column">
+            <!--단축키: [div.클래스이름*2] 쓰고 enter-->
+            <img
+              src="https://avatars.githubusercontent.com/u/90602936?s=400&u=102cba93fd859f66410bd45204d804675e821fd8&v=4"
+              class="user-component__img user-component__img--sm"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__name user-component__name--not-bold">
+                Channel
+              </h4>
+            </div>
+          </div>
+
+          <div class="user-component__column">
+            <span>2</span>
+            <i class="fas fa-chevron-right fa-xs"></i>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <nav class="nav">
       <ul class="nav__list">
