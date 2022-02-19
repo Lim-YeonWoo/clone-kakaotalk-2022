@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chats-kakaotalk clone</title>
+  </head>
+
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>100%</span>
+        <i class="fas fa-battery-full fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="screen-header">
+      <h1 class="screen-header__title">Chats</h1>
+      <div class="screen-header__icons">
+        <span> <i class="fas fa-search fa-lg"></i> </span>
+        <span> <i class="fas fa-comment-medical fa-lg"></i> </span>
+        <!--아이콘<i>는 단독으로 안쓰이고 <span> <a> 등으로 쌓여서 쓰임-->
+        <span> <i class="fas fa-music fa-lg"></i> </span>
+        <span> <i class="fas fa-cog fa-lg"></i> </span>
+      </div>
+    </header>
+
+    <main class="main-screen">
+      <div class="user-component">
+        <div class="user-component__column">
+          <!--단축키: [div.클래스이름*2] 쓰고 enter-->
+          <img
+            src="https://blog.kakaocdn.net/dn/Sq4OD/btqzlkr13eD/dYwFnscXEA6YIOHckdPDDk/img.jpg"
+            class="user-component__img"
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__name">KakaoTalk</h4>
+            <h6 class="user-component__subtitle">
+              Please check My Kakao Account info
+            </h6>
+          </div>
+        </div>
+
+        <div class="user-component__column">
+          <span class="user-component__time">21:22</span>
+          <span class="badge">1</span>
+        </div>
+      </div>
+    </main>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html">
+            <i class="far fa-user fa-lg"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="chats.html">
+            <span class="nav_notification badge">1</span>
+            <i class="fas fa-comment fa-lg"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="find.html">
+            <i class="fas fa-search fa-lg"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="more.html">
+            <span class="nav_dot"></span>
+            <i class="fas fa-ellipsis-h fa-lg"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!--아이콘 추가를 위한 fontawesome script-->
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

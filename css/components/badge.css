@@ -1,0 +1,14 @@
+.badge {
+  background-color: tomato;
+  /*span은 inline이라서 width랑 height 적용안되므로, 일단 block으로 바꾸자*/
+  /*display: block;*/ /*근데 밑에서 display: flex;하면 inline -> block 되므로 삭제*/
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  /*1을 가운데에 위치하게 하기 위함*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+}
