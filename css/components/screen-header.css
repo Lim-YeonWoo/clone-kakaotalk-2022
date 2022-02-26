@@ -15,4 +15,5 @@
 .screen-header__icons span {
   /*screen-header__icons아래의 모든 span에 적용시켜서, 아이콘 3개가 서로 떨어져 있게 margin을 주자*/
   margin-left: 25px;
+  position: relative;
 }
