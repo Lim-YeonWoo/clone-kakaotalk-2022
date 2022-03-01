@@ -1,0 +1,23 @@
+.icon-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-row__icon {
+  display: flex;
+  flex-direction: column; /*row는 옆에 오는 거고 column은 하나오고 다음줄에 오는 것*/
+  /*이제 cross axis와 main axis 바뀜. 이제 main이 세로축임.*/
+  align-items: center;
+  width: 80px;
+  height: 80px;
+}
+
+.icon-row__icon i {
+  font-size: 28px;
+}
+
+.icon-row__icon span {
+  margin-top: 15px;
+  font-size: 15px;
+  text-align: center;
+}

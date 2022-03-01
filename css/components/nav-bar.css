@@ -25,14 +25,3 @@
   left: 15px;
   bottom: 10px;
 }
-
-.nav_dot {
-  background-color: tomato;
-  border-radius: 50%;
-  display: block;
-  width: 7px;
-  height: 7px;
-  position: absolute;
-  left: 20px;
-  bottom: 18px;
-}

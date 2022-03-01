@@ -22,11 +22,6 @@
   font-size: 20px;
 }
 
-.user-component__subtitle {
-  margin-top: 7px;
-  color: var(--grey);
-}
-
 .user-component__img--xl {
   width: 70px;
   height: 70px;
@@ -51,4 +46,28 @@
 .user-component__time {
   margin-bottom: 10px; /*block설정해줘야함*/
   display: block;
+}
+
+.user-component__contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7px;
+}
+
+.user-component__subtitle {
+  color: var(--grey);
+}
+
+.user-component__info-dot {
+  color: tomato;
+  border: 2px solid tomato;
+  border-radius: 50%;
+  display: block;
+  width: 13px;
+  height: 13px;
+  text-align: center;
+  margin-left: 5px;
+  font-size: 12px;
+  font-weight: 700;
 }
