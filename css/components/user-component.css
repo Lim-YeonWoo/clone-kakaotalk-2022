@@ -2,6 +2,10 @@
   justify-content: space-between;
 }
 
+.user-component-list {
+  margin: 15px 0px;
+}
+
 .user-component, /*큰 column 2개를 가진 div */
 .user-component__column:first-child {
   /*큰 column 중에 첫번째꺼*/
