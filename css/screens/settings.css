@@ -1,0 +1,25 @@
+.settings-list {
+  border-bottom: var(--grey-border);
+}
+
+.settings-list__menu {
+  padding: 20px 0;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.settings-list__menu i {
+  opacity: 0.8;
+  padding-right: 15px;
+}
+
+.settings-list__menu-column {
+  display: flex;
+}
+
+.settings-list__menu-column:last-child {
+  opacity: 0.7;
+  font-size: 18px;
+}

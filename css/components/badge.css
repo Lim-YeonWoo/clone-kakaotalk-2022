@@ -12,3 +12,42 @@
   color: white;
   font-weight: 600;
 }
+
+.user-component__info-dot {
+  color: tomato;
+  border: 2px solid tomato;
+  border-radius: 50%;
+  display: block;
+  width: 13px;
+  height: 13px;
+  text-align: center;
+  margin-left: 5px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.badge-dot {
+  background-color: tomato;
+  border-radius: 50%;
+  display: block;
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  left: 20px;
+  bottom: 18px;
+}
+
+.badge-new {
+  color: white;
+  background-color: tomato;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-left: 10px;
+  font-size: 12px;
+  font-weight: 700;
+}
